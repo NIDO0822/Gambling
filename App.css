@@ -1,0 +1,108 @@
+/* App.css */
+
+/* Overall styles */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-image: url('gazillion.jfif'); /* Replace 'your-background-image.jpg' with the path to your image */
+  background-size: 20%;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #fff; /* Adjust text color to ensure readability */
+}
+
+/* Plinko styles */
+.plinko {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to improve readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(221, 108, 108, 0.1);
+}
+
+.plinko h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.plinko input[type="number"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Blackjack styles */
+.blackjack {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.blackjack h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Card styles */
+.cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: 60px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-right: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card.hidden {
+  background-color: #ddd;
+  color: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .plinko,
+  .blackjack {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
